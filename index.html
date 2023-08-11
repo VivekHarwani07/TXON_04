@@ -21,20 +21,20 @@
         <div class="container">
             <nav class="flex items-center justify-between">
                 <div class="left flex items-center">
-                    <div class="branding">
+                    <div class="branding" id="home">
                         <img src="./images/VH.png" height="70px" width="170px" alt="Unable to load image">
                     </div>
 
                     <div class="direct-links">
-                        <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Skills</a>
-                        <a href="#">Projects</a>
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#projects">Projects</a>
                     </div>
                 </div>
 
                 <div class="right">
-                    <button class="btn btn-primary">Contact</button>
+                    <button class="btn btn-primary" onclick="window.location.href='#contact'">Contact</button>
                 </div>
             </nav>
             <div class="hero flex items-center justify-between">
@@ -44,8 +44,8 @@
                 <div class="right flex-1">
                     <h6>Vivek Harwani</h6>
                     <h1>I'm a <span>Rapper</span> and <span>Developer.</span></h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                    <p style="text-align: justify;">
+                        Welcome to my digital realm, where creativity meets innovation. I am a passionate and driven individual dedicated to crafting meaningful experiences through coding and technology. With a keen eye for future and a deep understanding of user-centric principles, I bring visions to life in my coding environment. My journey of being an Good Engineer is still going on, fueled by curiosity and a thirst for knowledge.
                     </p>
                     <div>
                         <button class="btn btn-secondary">Download CV</button>
@@ -55,7 +55,7 @@
         </div>
     </header>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container flex items-center ">
             <div class="flex-1">
                 <img src="./images/myimage2.jpg" class="about-me-image" alt="">
@@ -64,24 +64,24 @@
             <div class="flex-1">
                 <h1>About <span>Me</span>.</h1>
                 <h3>Hello! I'm Vivek Harwani</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                <p style="text-align: justify;">
+                    Hey there, I'm Vivek Harwani, and I'm on an exciting journey pursuing engineering in "Artificial Intelligence and Data Science" stream. Code Editors are my playground, and I've got a soft spot for creating awesome things for Android devices. But it's not just about writing lines of code - I'm all about tackling challenges head-on and using data structures to solve problems like a puzzle. So, if you're into tech, coding, or just curious about the digital universe, let's connect and explore this exciting landscape together!
                 </p>
 
                 <div class="social">
                     <a href="https://www.linkedin.com/in/vivek-harwani-494abb230/" target="_blank">
                         <ion-icon name="logo-linkedin"></ion-icon>
                     </a>
-                    <a href="#" target="_blank">
-                        <ion-icon name="logo-instagram"></ion-icon>
+                    <a href="https://github.com/VivekHarwani07" target="_blank">
+                        <ion-icon name="logo-github"></ion-icon>
                     </a>
                     <a href="https://www.youtube.com/@vivekharwani" target="_blank">
                         <ion-icon name="logo-youtube"></ion-icon>
                     </a>
-                    <a href="https://github.com/VivekHarwani07" target="_blank">
-                        <ion-icon name="logo-github"></ion-icon>
+                    <a target="_blank">
+                        <ion-icon name="logo-instagram"></ion-icon>
                     </a>
-                    <a href="#" target="_blank">
+                    <a target="_blank">
                         <ion-icon name="logo-twitter"></ion-icon>
                     </a>
                 </div>    
@@ -90,7 +90,7 @@
         </div>
     </section>
 
-    <section class="skills">
+    <section class="skills" id="skills">
 
         <div class="container">
             <h1 class="section-heading">My <span>Skills</span>.</h1>
@@ -112,6 +112,16 @@
                         <ion-icon name="code-slash-outline"></ion-icon>
                     </div>
                     <h2>Problem Solving</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <div class="icon-background">
+                        <ion-icon name="phone-portrait-outline"></ion-icon>
+                    </div>
+                    <h2>Android Developement</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
@@ -141,17 +151,7 @@
                     <div class="icon-background">
                         <ion-icon name="finger-print-outline"></ion-icon>
                     </div>
-                    <h2>Cyber Security  </h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
-                </div>
-
-                <div class="card">
-                    <div class="icon-background">
-                        <ion-icon name="phone-portrait-outline"></ion-icon>
-                    </div>
-                    <h2>Android Developement</h2>
+                    <h2>Cyber Security</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </p>
@@ -163,13 +163,20 @@
 
     </section>
 
-    <section class="projects">
+    <section class="projects" id="projects">
 
         <div class="container">
             <h1 class="section-heading">My <span>Projects</span>.</h1>
             <p>Here are some awesome projects which i have created using different TechStacks.</p>
 
             <div class="card-wrapper">
+                <div class="card">
+                    <div class="overlay">
+                        <span>Name</span>
+                        <a href="https://github.com/kunalP2307/AgriSolutionsGFG" target="_blank">AgriSolutions<br><span> -- Android, Google Cloud, MongoDB --</span></a>
+                    </div>
+                    <img src="./images/AgriSultions.jpg" alt="">
+                </div>
                 <div class="card">
                     <div class="overlay">
                         <span>Name</span>
@@ -205,28 +212,22 @@
                     </div>
                     <img src="./images/project6.png" alt="">
                 </div>  
-                <div class="card">
-                    <div class="overlay">
-                        <span>Name</span>
-                        <a href="C:\Users\Vivek\Desktop\Txon Projects\Txon Task 2 - Calculator\calculator.html" target="_blank">Simple Calculator<br><span> -- HTML, CSS, JavaScript --</span></a>
-                    </div>
-                    <img src="./images/project5.png" alt="">
-                </div>
+                
                 
             </div>
 
         </div>
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="container">
             <h1 class="section-heading">Contact <span>Me</span>.</h1>
-            <p>Contact me whenever Money comes into picture.</p>
+            <p> Please feel free to interact with me via the social profiles provided.</p>
             <div class="card-wrapper">
                 <div class="card">
                     <a href="#" target="_blank"><ion-icon name="phone-portrait-outline"></ion-icon></a>
                     <h3>Call On</h3>
-                    <h6>+91 99899 23456</h6>
+                    <h6>+91 9325221898</h6>
                 </div>
                 <div class="card">
                     <a href="#" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
@@ -236,7 +237,7 @@
                 <div class="card">
                     <a href="#" target="_blank"><ion-icon name="map-outline"></ion-icon></ion-icon></a>
                     <h3>Visit Office</h3>
-                    <h6>Space Society, Nehru Nagar,<br>Pimpri, Pune, 411 018</h6>
+                    <h6>Antariksh Housing Society, Nehru Nagar,<br>Pimpri, Pune, 411 018</h6>
                 </div>
             </div>
 
@@ -266,16 +267,16 @@
             <a href="https://www.linkedin.com/in/vivek-harwani-494abb230/" target="_blank">
                 <ion-icon name="logo-linkedin"></ion-icon>
             </a>
-            <a href="#" target="_blank">
-                <ion-icon name="logo-instagram"></ion-icon>
-            </a>
+            <a href="https://github.com/VivekHarwani07" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>    
             <a href="https://www.youtube.com/@vivekharwani" target="_blank">
                 <ion-icon name="logo-youtube"></ion-icon>
             </a>
-            <a href="https://github.com/VivekHarwani07" target="_blank">
-                <ion-icon name="logo-github"></ion-icon>
+            <a target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
             </a>
-            <a href="#" target="_blank">
+            <a target="_blank">
                 <ion-icon name="logo-twitter"></ion-icon>
             </a>
         </div>
